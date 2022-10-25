@@ -21,6 +21,9 @@ endif()
 # Include main IDF cmake file.
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
+# Include main ADF cmake file.
+include($ENV{ADF_PATH}/CMakeLists.txt)
+
 # Define the output sdkconfig so it goes in the build directory.
 set(SDKCONFIG ${CMAKE_BINARY_DIR}/sdkconfig)
 
